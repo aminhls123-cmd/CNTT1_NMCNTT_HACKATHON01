@@ -1,0 +1,8 @@
+#script: auto_report.ps1
+#Tac gia: Nguyen Vuong Anh MInh
+#ngay tao: 28/10/2026
+
+Write-Host "Dang loclog..."
+
+"===BAO CAO LOI===" >logs/auto_report.txt
+Gc log/clinic.log | sls "" >> logs/auto_report.txt
